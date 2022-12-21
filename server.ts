@@ -27,7 +27,7 @@ connectToDatabase("mongodb+srv://Optisol-project1:Optisol-project1@cluster0.mujz
         });
 
        // start the Express server
-       app.listen(5000, () => {
+       app.listen(process.env.PORT ||5000, () => {
            console.log(`Server running at http://localhost:5000...`);
        });
  
